@@ -1,0 +1,117 @@
+.splash {
+  margin-bottom: 30px;
+}
+.splash .background-gradient {
+  background: linear-gradient(to bottom left, #323264 12%, #643e72 87%);
+  border-radius: 0px 0px 12px 12px;
+  padding-bottom: 60px;
+}
+.splash .background-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.splash .background-block .broder-splash {
+  border-bottom: 10px solid #cacadb;
+  border-radius: 0px 0px 12px 12px;
+  width: calc(100% - 40px);
+}
+.splash .background-block .broder-splash:nth-child(2) {
+  width: calc(100% - 80px);
+  border-bottom: 10px solid #e7e7f2;
+}
+
+.frame-title {
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+.frame-title .service-title-link {
+  text-decoration: none;
+  color: #24a3ff;
+}
+.frame-title .service-title-link {
+  display: inline-flex;
+  text-transform: uppercase;
+  align-items: center;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+.frame-title .service-title-link:hover {
+  color: #f0145a;
+}
+.frame-title .service-title-link:hover .hover-icon-title-link {
+  stroke: #f0145a;
+}
+.frame-title .service-title {
+  background: linear-gradient(to right, #f0145a, #ef8080);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  margin-top: 10px;
+}
+
+.service-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1fr));
+  gap: 30px;
+}
+.service-card .card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.service-card .card .card-icon-border {
+  border: none;
+  border-radius: 24px;
+  padding: 14px;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+}
+.service-card .card .card-icon-border .card-icon {
+  font-size: 64px;
+  background: linear-gradient(to bottom, #f0145a, #ef8080);
+  -webkit-background-clip: text;
+  color: transparent;
+  border: none;
+}
+.service-card .card .card-title {
+  color: #24a3ff;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  margin-bottom: 15px;
+}
+.service-card .card .description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .service-card {
+    grid-template-columns: repeat(auto-fit, minmax(294px, 1fr));
+  }
+  .wrapper {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+@media (min-width: 1024px) {
+  .service-card {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1920px) {
+  .service-card {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*# sourceMappingURL=splash.css.map */
